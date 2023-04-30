@@ -3,21 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { App } from './App';
 import {AppTheme} from "./theme/AppTheme";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, createHashRouter, RouterProvider} from "react-router-dom";
 import {Provider} from "react-redux";
 import {store} from "./store";
+
+const router = createHashRouter([
+    {
+        path: "/*",
+        element: <App />,
+    }
+]);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 root.render(
-  // <React.StrictMode>
+  <React.StrictMode>
       <Provider store={store}>
-          <BrowserRouter>
-              <App />
-          </BrowserRouter>
+          <RouterProvider router={router} />
       </Provider>
-  // </React.StrictMode>
+  </React.StrictMode>
 );
 
