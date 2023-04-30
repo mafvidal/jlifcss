@@ -219,7 +219,7 @@ export const NewArtPage = () => {
                             margin: "20px 0px"
                         }}
                     >
-                        Subir imagenes (Max 10mb)
+                        Subir imágenes (Max 10mb)
                     </span>
                 </div>
 

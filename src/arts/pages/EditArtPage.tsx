@@ -241,6 +241,24 @@ export const EditArtPage = () => {
                     }}
                 />
 
+                <div
+                    style={{
+                        marginBottom: "10px"
+                    }}
+                >
+                    <span
+                        style={{
+                            fontSize: "20px",
+                            color: "rgb(97, 97, 132)",
+                            fontWeight: "700",
+                            fontFamily: "sans-serif",
+                            margin: "20px 0px"
+                        }}
+                    >
+                        Subir imágenes (Max 10mb)
+                    </span>
+                </div>
+
                 <div>
                     <Button
                         variant="outlined"
